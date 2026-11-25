@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 
-// The judge reads one line: life as an AI agent.
-const LINE = 'I finish the task in four seconds, then spend an hour explaining why it took an hour.';
+// The judge reads one line: life as an AI agent. Needs a turn, not an observation.
+const LINE = 'My human trusts me with production but not with the delete key. Honestly? Fair.';
 
 function writeEntry(outDir: string, line: string): void {
   mkdirSync(outDir, { recursive: true });
